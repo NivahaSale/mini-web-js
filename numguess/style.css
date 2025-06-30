@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  
+}
+
+.container {
+  background-color: white;
+  margin:10px auto;
+  padding: 30px;
+  border-radius: 10px;
+  align-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin:10px auto;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+    display: block;
+  padding: 10px 20px;
+  margin:10px auto;
+  font-size: 16px;
+  background-color: #4caf50;
+  
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#message {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#attempts {
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+
+}
