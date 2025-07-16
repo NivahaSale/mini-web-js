@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+    <body>
+    <button id="dark-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+  <h1>Rock Paper Scissors</h1>
+        
+  <!-- Get number of rounds -->
+  <div id="round-setup">
+    <label for="rounds">Enter number of rounds:</label>
+    <input type="number" id="rounds" min="1" />
+    <button onclick="startGame()">Start Game</button>
+
+  </div>
+
+  <!-- Game UI (hidden until game starts) -->
+  <div class="game" id="game" style="display: none;">
+    <p id="round-info">Round: 1</p>
+    <div class="choices">
+      <button onclick="play('rock')">🪨 Rock</button>
+      <button onclick="play('paper')">📄 Paper</button>
+      <button onclick="play('scissors')">✂️ Scissors</button>
+    </div>
+    <div class="result">
+      <p id="player">You chose: </p>
+      <p id="computer">Computer chose: </p>
+      <h3 id="round-winner">Round Winner: </h3>
+      <p id="score">Score - You: 0 | Computer: 0</p>
+    </div>
+  </div>
+
+  <!-- Final result display -->
+  <div id="final-result" style="display: none;">
+    <h2 id="final-winner">Final Winner: </h2>
+    <button onclick="resetGame()">Play Again</button>
+  </div>
+
+  <script src="Scripts.js"></script>
+</body>
+
+</body>
+</html>
